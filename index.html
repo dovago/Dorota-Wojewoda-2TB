@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dorota Wojewoda 2TB">
+    <meta name="keywords" content="konie, ranking, najlepsze konie, jeździectwo, jazda konna">
+    <title>7 najlepszych koni świata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <h1 id="logo">NAJLEPSZE KONIE ŚWIATA</h1>
+        </div>
+        </header>
+
+    <div id="content-and-nav-wrapper">
+        
+        <nav id="main-nav">
+            <ul id="menu-list">
+                <li><a href="#glowna">Wprowadzenie - spis najlepszych koni</a></li>
+                <li><a href="secretariat.html">Najlepszy koń wszechczasów - Secretariat</a></li>
+                <li><a href="redrum.html">Red Rum</a></li>
+                <li><a href="milenium.html">Millennium</a></li>
+                <li><a href="seabiscuit.html">Seabiscuit</a></li>
+                <li><a href="bigstar.html">Big Star</a></li>
+                <li><a href="valegro.html">Valegro</a></li>
+                <li><a href="windsome.html">Windsome Adante</a></li>
+                <li><a href="#galeria">Galeria zdjęć</a></li>
+                <li><a href="#mapa">Secretariat w akcji</a></li>
+                <li><a href="#formularz">Formularz</a></li>
+                <li><a href="#listy">Fakty i cechy</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="glowna" class="content-block">
+                <h2>7 najlepszych koni świata</h2>
+                <p>Konie towarzyszą ludzkości od tysięcy lat, będąc symbolami siły, gracji i szybkości. Choć jeździectwo ma swoje legendy w każdej epoce, 
+                    niektóre wierzchowce zapisały się w historii na stałe, ustanawiając rekordy i zdobywając serca widzów na całym świecie. Poniższa tabela prezentuje zestawienie 
+                    siedmiu absolutnie najlepszych koni wszechczasów, wyróżnionych ze względu na ich niezwykłe osiągnięcia, długowieczność kariery oraz wpływ, jaki wywarły na 
+                    sport jeździecki i hodowlę.</p>
+
+                <h3>Ranking najlepszych koni według osiągnięć w sporcie</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imie konia</th>
+                            <th>Rok</th>
+                            <th>Zasługa</th>
+                            <th>Dyscyplina</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Secretariat</td>
+                            <td>1973</td>
+                            <td>Zwyciężył 3 razy <b>Triple crown</b></td>
+                            <td>Wyścigi</td>
+                        </tr>
+                        <tr>
+                            <td>Red Rum</td>
+                            <td>1974</td>
+                            <td>Zwyciężył 3 razy <b>Grand National</b></td>
+                            <td>Wyścigi</td>
+                        </tr>
+                        <tr>
+                            <td>Millennium</td>
+                            <td>1995</td>
+                            <td>Zwyciężył mistrzostwa świata</td>
+                            <td>Skoki przez przeszkody</td>
+                        </tr>
+                        <tr>
+                            <td>Seabiscuit</td>
+                            <td>1940</td>
+                            <td>Wygrana w <b>Santa Anita Handicap</b></td>
+                            <td>Wyścigi</td>
+                        </tr>
+                        <tr>
+                            <td>Big Star</td>
+                            <td>2016</td>
+                            <td>Złoty medal w <b>igrzyskach olimpijskich</b></td>
+                            <td>Skoki przez przeszkody</td>
+                        </tr>
+                        <tr>
+                            <td>Valegro</td>
+                            <td>2014</td>
+                            <td>Zwyciężył <b>mistrzostwa świata</b></td>
+                            <td>Ujeżdżenie</td>
+                        </tr>
+                        <tr>
+                            <td>Windsome Adante</td>
+                            <td>2005</td>
+                            <td>Zwyciężył <b>mistrzostwa świata</b></td>
+                            <td>Skoki przez przeszkody</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="galeria" class="content-block photo-block">
+                <h2>Galeria zdjęć</h2>
+                <p class="galeria-info">Galeria ta prezentuje sylwetki trzech niekwestionowanych gigantów świata jeździectwa, uwieczniając momenty ich chwały. 
+                    Zanurz się w świat wielkich koni i zobacz czystą pasję oraz niesamowitą atletykę. Podziwiaj energię i siłę Secretariata w szaleńczym biegu ku chwale, charyzmę Red Ruma, 
+                    który zasłynął z niezwykłej wytrwałości i determinacji, oraz precyzję i majestatyczne skoki Big Stara, mistrza olimpijskiego. 
+                    Trzy legendy, dwie dyscypliny, jeden wspólny duch zwycięstwa.</p>
+                <hr>
+                <br>
+                <div id="slideshow-container">
+                    <figure class="slide">
+                        <img src="foto/zdjecie1.jpg" alt="Secretariat">
+                    </figure>
+                    <figure class="slide">
+                        <img src="foto/zdjecie2.jpg" alt="Red Rum">
+                    </figure>
+                    <figure class="slide">
+                        <img src="foto/zdjecie3.jpg" alt="Big Star">
+                    </figure>
+                </div>
+            </section>
+            <script>
+        let slideIndex = 0;
+        let totalSlides = 0;
+        const slideshowContainer = document.getElementById('slideshow-container');
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            totalSlides = slides.length;
+
+            if (totalSlides === 0) {
+                console.error("Brak slajdów do wyświetlenia!");
+                return;
+            }
+            for (let i = 0; i < totalSlides; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > totalSlides) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); 
+        }
+        window.onload = function() {
+            if (slideshowContainer) {
+                showSlides();
+            }
+        };
+    </script>
+            <section id="multimedia" class="content-block map-video-block">
+                <h2>Multimedia i wizualizacja legendy - Secretariat</h2>
+                
+                <h3>Wideo: Niezrównany Finał Belmont Stakes - Secretariat</h3>
+               <iframe width="100%" height="315" src="https://www.youtube.com/embed/hD5fr54TVes?si=hvDXOcmM5Jq3PFFy" title="YouTube video player" frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 id="mapa">Lokalizacja: Tor Belmont Park – Miejsce Rekordu Świata</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1841330839243!2d-73.7259386880545!3d40.71396283737556!2m3!1f0!2f0!3
+                f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2607e9accc955%3A0xa1a68b18340623eb!2sBelmont%20Park!5e0!3m2!1spl!2spl!4v1765490075133!5m2!1spl!2spl" width="100%" 
+                height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+            <section id="listy" class="content-block">
+                <h2>Fakty i cechy, jakie musi posiadać wierzchowiec, aby zostać uznanym za legende</h2>
+                <p>Poniżej znajdują się kluczowe cechy, które definiują wierzchowca jako światową legendę:</p>
+                <ul>
+                    <li>Niezwykłe osiągnięcia (Tytuły Triple Crown, Puchary Świata, Złote Medale Olimpijskie)</li>
+                    <li>Rekordowa szybkość i wytrzymałość (Ustanowione rekordy czasowe na torach lub długość kariery)</li>
+                    <li>Wpływ na hodowlę (Wartość jako reproduktor i linia genetyczna)</li>
+                    <li>Charyzma i popularność (Zdolność do zjednywania fanów i wpisywania się w popkulturę)</li>
+                    <li>Wyjątkowa więź z jeźdźcem/trenerem (Długotrwała i udana współpraca)</li>
+                    <li>Wszechstronność (Zdolność do osiągania sukcesów w różnych warunkach i na różnych nawierzchniach)</li>
+                    <li>Długowieczność kariery sportowej (Utrzymanie formy na najwyższym poziomie przez wiele sezonów)</li>
+                </ul>
+            </section>
+    <section id="formularz" class="content-block">
+                <h2>Ankieta</h2>
+                <form action="https://formsubmit.co/dorota.wojewoda@tm1.edu.pl" method="post">
+                <input type="hidden" name="_captcha" value="false">
+                    <p>Czy podoba ci się strona?</p>
+                    <label><input type="radio" name="radio_name" value="tak" required>Tak</label>
+                    <label><input type="radio" name="radio_name" value="nie">Nie</label>
+                    <br>
+                    <hr>
+                    <label for="ocena">Jak oceniasz ten ranking wierzchowców</label>
+                    <select id="ocena" name="ocena" required>
+                        <option value="">-- [WYBIERZ] --</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <p>które części strony była dla ciebie najbardziej interesujące?</p>
+                    <label><input type="checkbox" name="check[]" value="tabela">Tabela z wynikami i rankingiem</label><br>
+                    <label><input type="checkbox" name="check[]" value="galeria">Galeria zdjęć</label><br>
+                    <label><input type="checkbox" name="check[]" value="fakt">Fakty i cechy</label><br>
+                    <hr>
+                    <label for="uwagi">Jeśli masz jakieś uwagi, umieść je tutaj!</label><br>
+                    <textarea id="uwagi" name="uwagi" rows="4"></textarea><br>
+                    <hr>
+                    <label for="wiek">Podaj jak bardzo podobała ci się strona w %:</label>
+                    <input type="number" id="wiek" name="wiek" min="1" max="100" required><br>
+
+                    <div class="form-buttons">
+                        <button type="submit">WYŚLIJ</button>
+                        <button type="reset">WYCZYŚĆ</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Dorota Wojewoda, 2tb</p>
+    </footer>
+
+</body>
+</html>
