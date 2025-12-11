@@ -1,0 +1,332 @@
+html, body {
+    height: 100%;
+}
+
+:root {
+    --kolor-tla: #f7f7f7;
+    --kolor-glowny: #ff7700;
+    --kolor-akcentu: #f55547;
+    --kolor-tekstu: #333;
+    --kolor-tla-menu: #efbf98;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--kolor-tla);
+    color: var(--kolor-tekstu);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--kolor-glowny);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#content-and-nav-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.content-block {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: var(--kolor-akcentu);
+    color: white;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--kolor-tekstu);
+    color: white;
+    font-size: 0.8em;
+}
+slide {
+    width: 100%; 
+    display: none;
+    vertical-align: top;
+}
+
+#slideshow-container {
+    animation: none !important;
+}
+
+#galeria {
+    margin-left: 0%;
+}
+img {
+    margin: 0%;
+}
+@keyframes neon-pulse {
+    0%, 100% {
+        text-shadow: 0 0 5px var(--kolor-akcentu), 0 0 10px var(--kolor-akcentu);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 15px var(--kolor-akcentu), 0 0 25px var(--kolor-akcentu), 0 0 40px var(--kolor-akcentu);
+        transform: scale(1.03);
+    }
+}
+
+#logo {
+    font-size: 2em;
+    padding: 5px;
+    animation: neon-pulse 3s ease-in-out infinite;
+}
+
+#main-nav {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 100%;
+}
+#menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+#menu-list li {
+    display: block; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#menu-list li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--kolor-tla-menu);
+    text-align: center;
+}
+#menu-list li a:hover {
+    background-color: #e1b96f;
+}
+
+#slideshow-container {
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    font-size: 0; 
+    animation: slide-show 12s infinite alternate;
+    margin: 0%;
+}
+.slide {
+    width: 100%; 
+    display: inline-block;
+    vertical-align: top;
+}
+.slide img {
+    margin: 0%;
+    object-fit: cover; 
+    border-radius: 5px;
+
+}
+@keyframes slide-show {
+    0%, 25% { transform: translateX(0%); } 
+    30%, 55% { transform: translateX(-100%); } 
+    60%, 85% { transform: translateX(-200%); } 
+    90%, 100% { transform: translateX(0%); }
+}
+@media screen and (max-width: 600px) {
+#listy {
+    order: 1;
+}
+#multimedia {
+    width: 100%;
+    order: 2;
+
+}
+#formularz {
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 600px) {
+    #content-and-nav-wrapper {
+        padding: 20px;
+    }
+    
+    #main-nav {
+        order: -1;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+    #menu-list {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--kolor-tla-menu);
+        border-radius: 5px;
+    }
+    #menu-list li {
+        display: inline-block;
+        border-bottom: none;
+    }
+    #menu-list li a {
+        background-color: transparent;
+        padding: 12px 10px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content-block {
+        width: 49%; 
+    }
+    
+    #listy {
+        display: block;
+        width: 100%;
+        order: 1;
+    }
+    #multimedia {
+        width: 100%;
+        order: 2;
+
+    }
+    #formularz {
+        width: 100%;
+        order: 3;
+    }
+    
+    #glowna, #galeria{
+        width: 49%; 
+    }
+    #dziedzictwo, #foto-secretariat {
+    width: 100%;
+    }
+    #foto-secretariat, #foto-redrum, #foto-millennium, 
+    #foto-seabiscuit, #foto-bigstar, #foto-valegro, 
+    #foto-windsome {
+        width: 100%; 
+        margin-top: 20px;
+    }
+    #listy, #listy-ol { 
+        display: block;
+        width: 100%; 
+        order: 1; 
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    #content-and-nav-wrapper {
+        max-width: 1250px;
+        padding: 20px;
+        display: flex; 
+        gap: 20px;
+        align-items: stretch;
+        min-height: 100%;
+    }
+    
+    #main-nav {
+        width: 20%; 
+        order: -1; 
+        margin-bottom: 0;
+        height: 100%;
+        
+    }
+    #menu-list {
+        display: block;
+        background-color: white;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        height: 100%;
+    }
+    #menu-list li {
+        margin-bottom: 10px;
+        border-bottom: none;
+    }
+    #menu-list li a {
+        color: var(--kolor-tekstu);
+        background-color: var(--kolor-tla);
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        text-align: left;
+    }
+    #menu-list li a:hover {
+        background-color: var(--kolor-akcentu);
+        color: white;
+    }
+
+    main {
+        width: 78%; 
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #glowna, #galeria { 
+        width: 49%;
+    }
+
+    #listy {
+    display: block;
+    width: 100%;
+    order: 3;
+    }
+    #formularz {
+        display: block;
+        width: 100%;
+        order: 5;
+    }
+    
+    #multimedia {
+        width: 100%;
+        order: 4;
+    }
+    #dziedzictwo, #foto-secretariat {
+        width: 49%; 
+        order: 5;
+    }
+    #dziedzictwo, 
+    #foto-secretariat, #foto-redrum, #foto-millennium, 
+    #foto-seabiscuit, #foto-bigstar, #foto-valegro, 
+    #foto-windsome {
+        width: 49%;
+        margin-top: 0;
+        order: 5;
+    }
+    #listy, #listy-ol { 
+        display: block;
+        width: 100%;
+        order: 3;
+    }
+}
